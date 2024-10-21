@@ -1,0 +1,45 @@
+1. Carregamento e Visualização Inicial dos Dados:
+
+O dataset escolhido foi carregado utilizando a biblioteca pandas em Python. As primeiras linhas dos dados foram exibidas para identificar as variáveis disponíveis, que são: Duration (duração do exercício), Pulse (frequência cardíaca média durante o exercício), Maxpulse (frequência cardíaca máxima atingida), e Calories (calorias queimadas). O dataset contém 169 linhas e 4 colunas, e todos os dados são do tipo numérico, o que facilita a realização de cálculos e análises.
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+2. Tratamento de Dados Faltantes:
+
+Ao verificar a presença de valores faltantes, identificamos que a coluna Calories apresentava 5 registros sem dados. Para garantir que essas lacunas não afetassem a análise, decidimos preencher os valores faltantes utilizando a mediana das calorias, que é uma estratégia adequada quando há outliers ou grandes variações nos dados, como era o caso. As outras colunas não apresentaram valores ausentes.
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+3. Exploração Descritiva dos Dados:
+
+Realizamos uma análise descritiva inicial para entender melhor a distribuição das variáveis. Identificamos que a duração dos exercícios variava de 15 a 300 minutos, com uma média de cerca de 64 minutos. A frequência cardíaca média variava de 80 a 159 bpm, enquanto a frequência máxima variava de 100 a 184 bpm. O número de calorias queimadas variava bastante, indo de 50 kcal até 1860 kcal, o que nos levou a concluir que havia uma variação considerável na intensidade e duração dos exercícios no dataset.
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+4. Criação de Visualizações:
+
+Com os dados limpos e explorados, criamos uma série de gráficos para entender melhor as relações entre as variáveis:
+
+Gráfico de dispersão (Duração vs. Calorias): Este gráfico mostrou uma correlação positiva clara, onde quanto maior a duração do exercício, mais calorias são queimadas. Foi uma das principais descobertas do projeto.
+
+Gráfico de barras (Duração categorizada vs. Calorias médias): Dividimos os exercícios em categorias de duração e exibimos a média de calorias queimadas para cada categoria. Isso tornou a relação entre duração e queima de calorias ainda mais intuitiva para quem visualiza os dados.
+
+Gráfico de linha: Um gráfico de linha foi utilizado para mostrar a tendência de aumento de calorias queimadas conforme a duração do exercício aumenta de maneira contínua.
+
+Esses gráficos ajudaram a demonstrar visualmente a forte relação entre as variáveis analisadas, sendo fáceis de interpretar mesmo para quem não tem familiaridade com análise de dados.
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+5. Resposta à Questão Levantada:
+
+A questão levantada foi: "Existe uma relação entre a duração do exercício e a quantidade de calorias queimadas?". Após a análise dos dados e a criação dos gráficos, concluímos que sim, existe uma forte correlação positiva entre a duração dos exercícios e a quantidade de calorias queimadas. Isso foi evidenciado tanto pelos gráficos quanto pelo cálculo da correlação, que foi de 0.92. O aumento na duração dos exercícios está fortemente ligado a um maior gasto calórico, o que é consistente com o que se espera em termos de fisiologia do exercício.
+
+
